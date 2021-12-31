@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    font-family: 'Lora', 'Segoe UI';
+    font-style: italic;
+    height: 90px;
+}
+/* color mode toggling*/
+.toggle {
+    margin-top: -0.5em;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 55px;
+	height: 30px;
+	background: #e5e5e5;
+	display: flex;
+	border-radius: 100px;
+	position: relative;
+}
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+input:checked + label {
+	background: #211f28;
+}
+input:checked + label::after {
+	background: #34323d;
+}
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+} 
+body + input:checked {
+    color: red;
+}
+img {
+    margin-left: 6px;
+    margin-right: 0px;
+    width: 18px;
+}
+body {
+    font-family: 'Jost', 'Segoe UI';
+}
