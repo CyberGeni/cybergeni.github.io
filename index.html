@@ -10,20 +10,22 @@
     <title>cyberGenie's Timeline</title>
 </head>
 <body>
-    <header>
-        <h1>cyberGenie's Timeline</h1>
-        <div class="toggle">
-            <input type="checkbox" id="switch" />
+        <header>
+            <h1>cyberGenie's Timeline</h1> 
+            <input type="checkbox" id="switch"/>
             <label for="switch">
-                <img src="assets/sun.svg" alt="">
-                <img src="assets/moon.svg" alt="">
-            </label>       
-        </div>
-    </header>
-    <main>
-        hello
-    </main>
-    
-    
+            <img src="assets/sun.svg" alt="">
+            <img src="assets/moon.svg" alt="">
+        </label>  
+        </header>
+        <main>
+            
+        </main>
+    <script>
+        const switchTheme = document.querySelector("#switch");
+        switchTheme.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+        });
+    </script>
 </body>
 </html>
