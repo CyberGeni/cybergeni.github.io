@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Jost', 'Segoe UI';
+    color: rgb(38, 39, 47);
 }
 /* header */
 header {
@@ -16,7 +17,13 @@ header {
     margin: auto;
     font-family: 'Lora', 'Segoe UI' !important;
     font-style: italic;
+    font-size: 0.8em;
     height: 90px;
+    transition: 0.3s ease-in-out;
+}
+header h1 {
+    text-align: center;
+    width: 100%;
 }
 /* all things color mode toggling*/
 .toggle {
@@ -29,8 +36,8 @@ input[type=checkbox]{
 }
 label {
 	cursor: pointer;
-	width: 55px;
-	height: 30px;
+	width: 56px;
+	height: 32px;
 	background: #e5e5e5;
 	display: flex;
 	border-radius: 100px;
@@ -39,7 +46,7 @@ label {
 label:after {
 	content: '';
 	position: absolute;
-	top: 5px;
+	top: 6px;
 	left: 5px;
 	width: 20px;
 	height: 20px;
@@ -59,10 +66,44 @@ input:checked + label:after {
 } 
 img {
     margin-left: 6px;
+}
+img:first-child {
     margin-right: 0px;
+    width: 16px;
+}
+img:last-child {
     width: 18px;
+    margin-right: 8px;
 }
 .dark-mode {
     color: white;
     background-color: #26242e;
+}
+@media screen and (min-width: 720px){
+    header {
+        font-size: 1em;
+    }
+    label {
+        cursor: pointer;
+        width: 64px;
+        height: 36px;
+        background: #e5e5e5;
+        display: flex;
+        border-radius: 100px;
+        position: relative;
+    }
+    label:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 5px;
+        width: 24px;
+        height: 24px;
+        background: #fff;
+        border-radius: 90px;
+        transition: 0.3s;
+    }
+    img:first-child {
+        margin-left: 10px;
+    }
 }
