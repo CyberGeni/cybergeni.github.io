@@ -75,6 +75,56 @@ img:last-child {
     width: 18px;
     margin-right: 8px;
 }
+main {
+    width: 85%;
+    max-width: 500px;
+    margin: 1.5em auto;
+}
+.year {
+    color: white;
+    width: fit-content;
+    padding: 8px 24px;
+    border: 0.009em solid white;
+    border-radius: 4px;
+    background-color: rgb(204, 36, 92);
+    font-weight: 500;
+}
+.tree {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9em;
+    position: relative;
+    z-index: -10;
+    margin-top: -.5em;
+    margin-left: 1.4em;
+    padding: 0.3em;
+    width: 75%;
+    height: fit-content;
+    border: 2px solid #ccc;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-radius: 0 24px;
+}
+.info {
+    margin: 1.5em 2.65em;
+    margin-top: -2.8em;
+    padding: 4em 0em 1em 3.5em;
+    width: 75%;
+    position: relative;
+    border: 2px solid #ccc;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-radius: 0 24px;
+}
+.info img {
+    position: absolute;
+    top: 45%;
+    left: -25px;
+    background-color: dodgerblue;
+    border-radius: 50%;
+    width: 36px;
+    padding: 0.5em;
+}
 .dark-mode {
     color: white;
     background-color: #26242e;
